@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reutberg</name>
+    </assembly>
+    <members>
+        <member name="M:Reutberg.IReutbergService.GetQuote(System.String)">
+            <summary>
+            Returns the current price for the specified ticker.
+            </summary>
+            <param name="ticker">Ticker for which to retrieve current price.</param>
+            <exception cref="T:Reutberg.QuoteException">Thrown is retrieval of quote fails.</exception>
+            <returns>Current price in USD.</returns>
+        </member>
+        <member name="M:Reutberg.IReutbergService.Buy(System.String,System.Int32)">
+            <summary>
+            Executes a buy trade for the specified ticker of the specified size, and returns the total value of the trade (which should be +ve).
+            </summary>
+            <param name="ticker">Ticker for which to execute trade.</param>
+            <param name="quantity">Size of trade.</param>
+            <exception cref="T:Reutberg.TradeException">Thrown is trade fails to execute correctly.</exception>
+            <returns>Total value of trade in USD.</returns>
+        </member>
+        <member name="M:Reutberg.IReutbergService.Sell(System.String,System.Int32)">
+            <summary>
+            Executes a sell trade for the specified ticker of the specified size, and returns the total value of the trade (which should be -ve).
+            </summary>
+            <param name="ticker">Ticker for which to execute trade.</param>
+            <param name="quantity">Size of trade.</param>
+            <exception cref="T:Reutberg.TradeException">Thrown is trade fails to execute correctly.</exception>
+            <returns>Total value of trade in USD.</returns>
+        </member>
+        <member name="T:Reutberg.ReutbergService">
+            <inheritdoc />
+        </member>
+        <member name="M:Reutberg.ReutbergService.GetQuote(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reutberg.ReutbergService.Buy(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Reutberg.ReutbergService.Sell(System.String,System.Int32)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

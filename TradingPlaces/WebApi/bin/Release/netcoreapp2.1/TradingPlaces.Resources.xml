@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TradingPlaces.Resources</name>
+    </assembly>
+    <members>
+        <member name="T:TradingPlaces.Resources.TradingPlacesBackgroundServiceBase">
+            <inheritdoc />
+        </member>
+        <member name="M:TradingPlaces.Resources.TradingPlacesBackgroundServiceBase.#ctor(System.TimeSpan,Microsoft.Extensions.Logging.ILogger{TradingPlaces.Resources.TradingPlacesBackgroundServiceBase})">
+            <inheritdoc />
+            <param name="tickFrequency">Frequency that the service will execute the CheckStrategies method.</param>
+        </member>
+        <member name="M:TradingPlaces.Resources.TradingPlacesBackgroundServiceBase.ExecuteAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
